@@ -1,10 +1,20 @@
 body, h1, h2, h3,h4{
     margin: 0 0;
+    color: navy;
 }
 
-header{
-    padding: 20px 35px;
+p{
+    margin-top: 0;
+}
+ 
+header{ 
+    padding: 20px 0;
     background-color: #080d0e;
+}
+
+header img{
+    width: 50px;
+    height: auto;
 }
 
 header h1{
@@ -12,41 +22,45 @@ header h1{
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
+    display: inline-block;
+    padding-left: 30px;
 }
 
 header a{
     text-decoration: none;
-    color: #fce138;
 }
 
-header nav{
-    float: right;
-    margin: 7px 0;
+header nav{ 
+    right: 30px;
+    position: absolute;
 }
 
 header nav ul li{
-    display: inline;
-}
+    display: inline-block;
+} 
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    color: mediumturquoise;
+    text-decoration: underline;
+    display: inline-block;
 }
 
 .hero{
     width: 100%; 
+    height: 150px;
+    position: relative;
 }
 
-.hero div{
-    text-align: right;
+.hero .detail{
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
 }
 
-.hero h2{
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 20px;
+.hero h2{ 
     display: inline-block; 
 }
 
@@ -105,6 +119,7 @@ header nav ul li a {
 }
 
 .work .bg-img{
+    display: block;
     width: 100%;
     height: 100%;
     position: relative;
@@ -115,18 +130,33 @@ header nav ul li a {
     display: inline-block;
     position: absolute;
     bottom: 20px;
-    padding: 10px;
-    background-color: mediumturquoise;
 }
 
-.contacts > li{
+.bg-color, .work .detail{
+    padding: 10px;
+    background-color: mediumturquoise;
+    color: #000;
+}
+
+.bg-color a{
+    color: #000;
+}
+
+.flex-container > ul li, .contacts > ul li{
     width: 20%;
     text-align: center;
 }
 
-.contacts{
-    margin: 0;
+.contacts > ul li a{
+    text-decoration: none;
+    border-bottom: 4px solid #000;
+    display: inline-block;
 }
+
+.contacts {
+    margin: 30px 0;
+}
+
 
 @media only screen and (max-width: 420px) {
     .container > .item:first-of-type{
@@ -134,5 +164,11 @@ header nav ul li a {
     }
     .container > .item:last-of-type{
         width: 70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header nav{
+        position: initial;
     }
 }
