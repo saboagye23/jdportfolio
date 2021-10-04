@@ -11,8 +11,7 @@ Portfolio website for Junior Developer
 https://saboagye23.github.io/jdportfolio/
 
 ## Screenshots
-![Screenshot 1](./screenshots/shot1.png)
-![Screenshot 2](./screenshots/shot2.png)
+![Screenshot 1](./screenshots/portfolio.png)
 
 ## Contribution
 Made with ❤ by Sherol A
